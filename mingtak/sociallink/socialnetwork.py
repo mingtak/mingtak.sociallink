@@ -24,15 +24,9 @@ class ISocialNetwork(form.Schema, IImageScaleTraversable):
     """
     Social network basic meta data
     """
-    logoImage = NamedBlogImage (
+    logoImage = NamedBlobImage (
         title=_(u"Logo"),
         description=_(u"Social network website's logo image."),
-        required=True,
-    )
-
-    websiteLink = schema.URI (
-        title=_(u"Site link"),
-        description=_(u"Site url link, must be include http://"),
         required=True,
     )
 
@@ -46,5 +40,4 @@ class SampleView(grok.View):
 
     grok.context(ISocialNetwork)
     grok.require('zope2.View')
-
-    # grok.name('view')
+    grok.name('view')
