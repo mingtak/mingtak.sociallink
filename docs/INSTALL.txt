@@ -1,0 +1,17 @@
+mingtak.sociallink Installation
+-------------------------------
+
+To install mingtak.sociallink using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``mingtak.sociallink`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        mingtak.sociallink
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
