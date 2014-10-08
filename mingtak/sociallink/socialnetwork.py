@@ -27,7 +27,7 @@ class ISocialNetwork(form.Schema, IImageScaleTraversable):
     logoImage = NamedBlobImage (
         title=_(u"Logo"),
         description=_(u"Social network website's logo image."),
-        required=True,
+        required=False,
     )
 
 
